@@ -1,0 +1,8 @@
+_     So far i've done the keyboard input calculations the calculator is fully usable by keyboard except the decimal numbers gonna have to cook something up for that (probably will have to use the method .has() and check if the aray curentNumbers has a . in it) other than that all thats left is the mouse click controll wich should be much easier considering i have 90% of the logic down already.
+_    Some issues i ran into were like i couldnt use backspace with the listener 
+.keypress so i had to make a seperate document querry with the listener .keydown
+the difference between these is that keypress lets you take in keys that require 2 keypresses such as + (shift + '=') but in return dont conside the inputs like 'esc', 'backspace', 'shift'.
+_    Some other things i learnt were that you can just add the + sign infront of a string of numbers or list of seperate numbers (joined by '') and store it as a number type.
+_    I also used the grid layout for the first time in my life it's in some cases pretty handy depending on the situation its sometimes better than flexbox.
+_    I fixed the initial aritmetic lag by storing the aritmetic operators in a list and than just using the second to last one wich in turn allows me to pick my aritmetic opperator and than my 2nd number.
+_    The math is done by only using 2 variables num1 and sum and after every operation the product is stored in the sum and num1 gets reset back to 0 ready for the next turn use.
